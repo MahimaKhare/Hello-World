@@ -165,3 +165,22 @@ match num2:
     case _:
          print("Losser")  
 
+
+#04 
+number = int(input("enter a number between 1 to 50"))
+match number:
+    case("num == 25"):
+       
+    case("num>=0 and num<=24"):
+        
+    case("num>=21 and num<=24"):
+        print("lesser but near to win")    
+    case("num >=26 and num<=30"):
+        print("near to win but greater")
+    case("num>=31 and num<=50"):
+        print("Greater")
+    case _:
+        print("enter a valid number")    
+  
+    
+    
