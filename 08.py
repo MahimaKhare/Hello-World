@@ -40,3 +40,8 @@ student_details("Mahima", "Khare", 20, 23)
 add = lambda a,b : a+b
 result = add(30,40)
 print(result)
+
+#2. 
+def test(x,y):
+    return x if x>y else y
+print(test(test(2,5),test(10,3)))
