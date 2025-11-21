@@ -31,7 +31,7 @@ if is_prime:
     print("is Prime number")
 else:
     print("Not Prime")
-    
+
 #05.Write a program to print the multiplication table of any number (example: table of 7) using a for loop.
 for j in range (1,11):
   print(j * 12)
