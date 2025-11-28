@@ -64,18 +64,22 @@ data = {
     }
 }
 print(data)
+
+
 #Q1. Unique Cities Finder
 cities = ["Delhi", "Mumbai", "Pune", "Delhi", "Pune", "Jaipur", "Mumbai"]
+
 # 1.unique cities set from List
 x = set(cities)
 print(x)
 print(type(x))
-
 # 2. Total unique cities count 
 print(len(x))
 
+
 #Q2. Remove Duplicates from List Using Set
 nums = [1, 2, 3, 2, 4, 1, 5, 3, 6, 5]
+
 #1. remove duplicates using set
 y = set(nums)
 print(y)
@@ -83,6 +87,7 @@ print(y)
 y2 = list(y)
 print(y2)
 print(type(y2))
+
 
 #Q3. Count Word Frequency (Dictionary)
 text = "apple mango apple orange mango apple"
@@ -95,6 +100,7 @@ fruits ={
 }
 print(fruits)
 
+
 #Q4. Student Marks Dictionary
 marks = {
     "Ajay": 85,
@@ -102,6 +108,7 @@ marks = {
     "Simran": 78,
     "Neha": 90
 }
+
 # 1.Print students names 
 for i in marks:
     print(i)
@@ -113,6 +120,7 @@ print(sum / len(marks))
 # 3. Highest marks laane wale student ka naam print karo
 
 
+
 #Q5. Price Updater
 prices = {
     "pen": 10,
@@ -121,9 +129,7 @@ prices = {
 }
 
 # Task:
-# 1. Sab items ki price 10% badhao 
+# 1. increase the items price by 10% 
 for i in prices.values():
     new_dict = i * 1.10
     print(new_dict)
-# 2. print new dictionary
-print(new_dict)
