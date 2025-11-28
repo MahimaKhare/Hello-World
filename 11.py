@@ -92,15 +92,16 @@ print(type(y2))
 #Q3. Count Word Frequency (Dictionary)
 text = "apple mango apple orange mango apple"
 
-#1. creat dictionary
-fruits ={
-         "apple" : 3,
-         "mango" : 2,
-         "orange" : 1
-}
-print(fruits)
+d2 = text.split(" ")
+print(d2)
 
-
+this_dict = {}
+for i in d2:
+    if i in this_dict:
+        this_dict[i] += 1
+    else:
+        this_dict[i] = 1
+print(this_dict)            
 #Q4. Student Marks Dictionary
 marks = {
     "Ajay": 85,
@@ -110,12 +111,16 @@ marks = {
 }
 
 # 1.Print students names 
-for i in marks:
+for i in marks.keys():
     print(i)
 
 # 2. Average marks 
-sum = sum(marks.values())
-print(sum / len(marks))
+sum = 0
+for i in marks.values():
+    sum += i
+    avg = sum / len(marks)
+print(avg)        
+
 
 # 3. Highest marks laane wale student ka naam print karo
 
@@ -130,6 +135,7 @@ prices = {
 
 # Task:
 # 1. increase the items price by 10% 
-for i in prices.values():
-    new_dict = i * 1.10
-    print(new_dict)
+new_dict = {}
+for i, j in prices.items():
+    new_dict[i] = j * 1.10
+print(new_dict)
