@@ -1,12 +1,24 @@
-import time
-lst = list(range(1_000_000))
-start = time.time()
-[x*2 for x in lst]
-print(time.time()-start)
+data = [10,20,30,10,40,50,60]
+max = 0
+min = 0
 
-#
-import numpy as np 
-arr = np.arange(1_000_000)
-start = time.time()
-arr*2
-print(time.time()-start)
+for i in data:
+    if i > max:
+        max = i 
+
+    if max > i:
+        min = i
+print(min)        
+
+second_largest = 0
+for i in data:
+    if i < max and i > second_largest:
+        second_largest = i   
+print(second_largest)        
+
+second_smallest = 10
+for i in data:
+    if i < max and i > second_smallest:
+        second_smallest = i
+
+print(second_smallest)        
