@@ -7,8 +7,7 @@ for i in data:
         max = i 
 
     if max > i:
-        min = i
-print(min)        
+        min = i        
 
 second_largest = 0
 for i in data:
